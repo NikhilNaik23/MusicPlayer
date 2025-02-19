@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player:Music For Everyone</title>
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/utility.css" />
+  <link rel="icon" type="image/x-icon" href="favicon.svg">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <img src="Images/close.svg" class="invert" width="30">
+            </div>
+            <div class="home bg-gray rounded m-1 p-1">
+                <img src="Images/logo.svg" alt="logo" width="100" class="invert">
+                <ul>
+                    <li><img src="Images/home.svg" alt="home" class="invert">Home</li>
+                    <li><img src="Images/search.svg" alt="search" class="invert">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-gray rounded m-1 p-1">
+                <div class="heading">
+                    <img src="Images/playlist.svg" alt="" class="invert">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList">
+                    <ul>
+                        
+                    </ul>
+                </div>
+                <div class="footer">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/accessibility/"><span>Accessibility</span></a></div>
+                </div>
+            </div>
+        </div>
+        <div class="right bg-gray rounded ">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburger">
+                        <img src="Images/hamburger.svg" height="40" class="invert">
+                    </div>
+                    <img src="Images/leftArrow.svg" alt="leftArrow" class="invert">
+                    <img src="Images/rightArrow.svg" alt="rightArrow" class="invert">
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Sign up</button>
+                    <button class="loginBtn">Log in</button>
+                </div>
+            </div>
+            <div class="spotifyPlaylist">
+                <h1>Music Playlists</h1>
+                <div class="cardContainer">
+                </div>
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+
+                        </div>
+                    </div>
+                    <div class="songDetails">
+                        <div class="songinfo"></div>
+                        <div class="songButtons">
+                            <img width="35" id="prev" src="Images/prevsong.svg" alt="">
+                            <img width="35" id="play" src="Images/play.svg" alt="">
+                            <img width="35" id="next" src="Images/nextsong.svg" alt="">
+                        </div>
+                        <div class="sound">
+                            <div class="songtime"></div>
+                            <div class="volume">
+                                <img id="volImg" src="Images/volume.svg" alt="">
+                                <div class="range">
+                                    <input type="range" name="volume" id="vol"></input>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/JavaScript/script.js"></script>
+</body>
+
+</html>
